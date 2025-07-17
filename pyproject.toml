@@ -20,7 +20,7 @@ dynamic = ["version"]
 readme = "README.md"
 requires-python = ">=3.10, <3.13"
 license = { file = "LICENSE" }
-dependencies = ["nomad-lab[parsing, infrastructure] @ git+https://gitlab.mpcdf.mpg.de/nomad-lab/nomad-FAIR.git@develop", "setuptools"]
+dependencies = [ "setuptools", "nomad-lab[parsing, infrastructure]" ] # @ git+https://gitlab.mpcdf.mpg.de/nomad-lab/nomad-FAIR.git@develop",]
 
 
 [project.urls]
@@ -57,7 +57,7 @@ plugins = [
   "nomad-parser-plugins-database>=1.0",
 ]
 jupyter = []
-dev = ["nomad-lab[parsing, infrastructure, dev] @ git+https://gitlab.mpcdf.mpg.de/nomad-lab/nomad-FAIR.git@develop "]
+dev = ["nomad-lab[parsing, infrastructure, dev]"] # @ git+https://gitlab.mpcdf.mpg.de/nomad-lab/nomad-FAIR.git@develop "]
 
 [tool.uv]
 extra-index-url = [
