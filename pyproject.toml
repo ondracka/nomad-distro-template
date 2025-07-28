@@ -20,7 +20,7 @@ dynamic = ["version"]
 readme = "README.md"
 requires-python = ">=3.10, <3.13"
 license = { file = "LICENSE" }
-dependencies = ["nomad-lab[parsing, infrastructure]>=1.3.4", "setuptools"]
+dependencies = ["nomad-lab[parsing, infrastructure] @ git+https://gitlab.mpcdf.mpg.de/nomad-lab/nomad-FAIR.git@develop", "setuptools"]
 
 
 [project.urls]
@@ -51,13 +51,13 @@ plugins = [
   "nomad-normalizer-plugin-system>=1.0",
   "nomad-normalizer-plugin-simulation-workflow>=1.0",
   "eelsdbconverter @ git+https://github.com/nomad-coe/nomad-parser-eelsdb.git@entry-point",
-  "nomad-parser-plugins-electronic>=1.0",
+  "nomad-parser-plugins-electronic @ git+https://github.com/nomad-coe/electronic-parsers.git@develop",
   "nomad-parser-plugins-atomistic>=1.0",
   "nomad-parser-plugins-workflow>=1.0",
   "nomad-parser-plugins-database>=1.0",
 ]
 jupyter = []
-dev = ["nomad-lab[parsing, infrastructure, dev]>=1.3.4"]
+dev = ["nomad-lab[parsing, infrastructure, dev] @ git+https://gitlab.mpcdf.mpg.de/nomad-lab/nomad-FAIR.git@develop "]
 
 [tool.uv]
 extra-index-url = [
